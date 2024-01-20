@@ -69,7 +69,7 @@ qiskit.circuit.QuantumRegister(size=None, name=None, bits=None)
 
 获取寄存器大小。
 
-####方法
+#### 方法
 
 **index**
 
