@@ -368,7 +368,7 @@ append(instruction, qargs=None, cargs=None)
 qiskit.circuit.Gate(name, num_qubits, params, label=None, duration=None, unit='dt')
 ```
 
-####**参数**
+#### **参数**
 
 - **name** ([*str*](https://docs.python.org/3/library/stdtypes.html#str)) - 门的Qobj名称。
 - **num_qubits** ([*int*](https://docs.python.org/3/library/functions.html#int)) - 门作用的量子位数。
