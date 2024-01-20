@@ -2,9 +2,9 @@
 
 Qiskit 是由 IBM 提供的开源量子计算软件开发工具包
 
-##Quantum Circuit Construction
+## Quantum Circuit Construction
 
-###Qubit
+### Qubit
 
 ```
 qiskit.circuit.Qubit(register=None, index=None)
@@ -12,7 +12,7 @@ qiskit.circuit.Qubit(register=None, index=None)
 
 量子位的实现，创建一个量子位。
 
-####参数
+#### 参数
 
 - **register**  - 可选。包含该位的量子寄存器。
 - **index**  - 可选。位在其包含寄存器中的索引。
@@ -27,7 +27,7 @@ qiskit.circuit.Qubit(register=None, index=None)
 
   获取旧式比特的寄存器。在现代的 Qiskit Terra（0.17版及以后），比特是基本对象，而寄存器是对比特集合的别名。一个比特可以根据电路的不同而在多个寄存器中，因此单个包含寄存器不再是比特的属性。在未被寄存器“拥有”构造的比特上访问此属性是错误的。自0.17版起已弃用`qiskit.circuit.bit.Bit.register` 属性自 qiskit-terra 0.17版起已弃用。它将在发布日期后不早于3个月被移除。相反，使用 `find_bit()` 来在电路中找到所有包含寄存器及比特在电路中的索引。
 
-###QuantumRegister
+### QuantumRegister
 
 ```
 qiskit.circuit.QuantumRegister(size=None, name=None, bits=None)
@@ -35,13 +35,13 @@ qiskit.circuit.QuantumRegister(size=None, name=None, bits=None)
 
 量子寄存器的实现，创建一个新的通用寄存器。必须提供 `size` 或 `bits` 参数之一。如果 `size` 非空，则寄存器将预先填充正确类型的比特。
 
-####参数
+#### 参数
 
 - **size** ([*int*](https://docs.python.org/3/library/functions.html#int)) - 可选。寄存器中包含的比特数。
 - **name** ([*str*](https://docs.python.org/3/library/stdtypes.html#str)) - 可选。寄存器的名称。如果未提供，则会自动生成一个基于寄存器类型的唯一名称。
 - **bits** ([*list*](https://docs.python.org/3/library/stdtypes.html#list)*[*[*Bit*](https://docs.quantum.ibm.com/api/qiskit/qiskit.circuit.Bit)*]*) - 可选。用于填充寄存器的 Bit() 实例列表。
 
-####属性
+#### 属性
 
 **instances_counter**
 
@@ -87,7 +87,7 @@ qasm()
 
 返回此寄存器的 OPENQASM 字符串表示。
 
-###QuantumCircuit
+### QuantumCircuit
 
 ```
 qiskit.circuit.QuantumCircuit(*regs, name=None, global_phase=0, metadata=None)
@@ -95,7 +95,7 @@ qiskit.circuit.QuantumCircuit(*regs, name=None, global_phase=0, metadata=None)
 
 创建一个新的线路。一个线路是一个绑定于寄存器的指令列表
 
-####参数
+#### 参数
 
 - **regs** (list([`Register`](https://docs.quantum.ibm.com/api/qiskit/qiskit.circuit.Register)) 或 list(`int`) 或 list(list([`Bit`](https://docs.quantum.ibm.com/api/qiskit/qiskit.circuit.Bit))))：
 
@@ -175,8 +175,8 @@ qc.draw('mpl')
 ```
 
 ![../_images/qiskit-circuit-QuantumCircuit-2.png](https://docs.quantum.ibm.com/_next/image?url=%2Fimages%2Fapi%2Fqiskit%2Fqiskit-circuit-QuantumCircuit-2.png&w=1920&q=75)
-
-####属性
+ 
+#### 属性
 
 **ancillas**
 
@@ -322,7 +322,7 @@ ParameterView([
 
 返回按照寄存器添加顺序的量子比特列表。
 
-####方法
+#### 方法
 
 **add_bits**
 
@@ -362,7 +362,7 @@ append(instruction, qargs=None, cargs=None)
 
 ## Gates and Instructions
 
-###Gate
+### Gate
 
 ```
 qiskit.circuit.Gate(name, num_qubits, params, label=None, duration=None, unit='dt')
@@ -619,7 +619,7 @@ soft_compare(other)
 
 门之间的软比较。它们的名称、量子位数量和经典位数量必须匹配。参数的数量必须匹配。
 
-###ControlledGate
+### ControlledGate
 
 ```
 qiskit.circuit.ControlledGate(name, num_qubits, params, label=None, num_ctrl_qubits=1, definition=None, ctrl_state=None, base_gate=None, duration=None, unit=None, *, _base_label=None)
