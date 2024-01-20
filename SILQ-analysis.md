@@ -65,7 +65,7 @@ Silq和其他量子编程语言在实现非计算时的不同。这些示例显�
 
 Silq通过其类型系统的设计，确保只有那些可以安全非计算的值才会被自动地丢弃。通过Grover算法的例子，展示了如何在不影响程序的物理实现的情况下，安全地实现自动非计算。
 
-![截屏2024-01-19 15.47.14](/Users/yangyuhang/Library/Application Support/typora-user-images/截屏2024-01-19 15.47.14.png)
+![](/img/grover)
 
 ## **防止错误**
 
@@ -85,7 +85,7 @@ Silq通过其类型系统的设计，确保只有那些可以安全非计算的�
 
 - **通用性**：对单个量子位的任意操作（例如，通过 rotX, rotY 和 rotZ 启用），Silq-core 对量子计算是通用的，即它可以以任意精度近似任何量子操作。
 
-  ![截屏2024-01-19 16.09.20](/Users/yangyuhang/Library/Application Support/typora-user-images/截屏2024-01-19 16.09.20.png)
+  ![](/img/Syntax-types-and-annotations.png)
 
 ## **Silq-Core的类型和注释**
 
@@ -179,7 +179,7 @@ Silq-Core 的语义涉及该语言如何解释和执行代码，以及不同构�
 
 3. **类型系统和自动解计算**：Silq 支持自动解计算和更高级的类型系统，包括依赖类型、子类型和类型转换，而 Q# 则没有这些特性。
 
-   ![截屏2024-01-19 16.22.29](/Users/yangyuhang/Library/Application Support/typora-user-images/截屏2024-01-19 16.22.29.png)
+   ![](/img/compare-to-C#.png)
 
 #### 与 Quipper 的比较
 
@@ -189,7 +189,7 @@ Silq-Core 的语义涉及该语言如何解释和执行代码，以及不同构�
 
 3. **内置函数和门的数量**：Quipper 提供了大量的内置函数和基本门，而 Silq 只提供了有限的基本门和反转类型，但没有牺牲表达能力。
 
-   ![截屏2024-01-19 16.23.10](/Users/yangyuhang/Library/Application Support/typora-user-images/截屏2024-01-19 16.23.10.png)
+   ![](/img/compare-to-other-language.png)
 
 总体上，分析表明 Silq 在编写量子程序时提供了更高的简洁性和表达能力，同时减少了对低级量子原语的依赖。这使得 Silq 成为一种更易于学习和使用的量子编程语言。
 
