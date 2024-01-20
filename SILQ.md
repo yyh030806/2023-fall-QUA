@@ -192,7 +192,7 @@ if x {     // controlled on x,
 }
 ```
 
-<img src="./basic-ite.svg" width="100" height="100">
+<img src="./img/basic-ite.svg" width="100" height="100">
 
 #### 循环语句
 
