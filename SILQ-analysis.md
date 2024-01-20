@@ -29,7 +29,7 @@ Silq语言中自动非计算功能相对于现有语言中的显式非计算的�
 
 Silq和其他量子编程语言在实现非计算时的不同。这些示例显示了Silq在简化非计算过程方面的优势，特别是在减少编程的复杂性和提高代码可读性方面。
 
-![](/img/automatic uncomputation.png)
+![](automatic uncomputation.png)
 
 # 2. Silq概述
 
