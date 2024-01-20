@@ -17,7 +17,7 @@ qiskit.circuit.Qubit(register=None, index=None)
 - **register**  - 可选。包含该位的量子寄存器。
 - **index**  - 可选。位在其包含寄存器中的索引。
 
-####属性
+#### 属性
 
 - **index**
 
