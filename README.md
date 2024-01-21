@@ -21,9 +21,9 @@
 
 [HiQ](https://hiq.huaweicloud.com/home)
 
-[Q#]([https://hiq.huaweicloud.com/home](https://learn.microsoft.com/zh-cn/azure/quantum/user-guide/libraries/standard/))
+[Q#](https://learn.microsoft.com/zh-cn/azure/quantum/user-guide/libraries/standard/)
 
-[Quipper]([The Quipper Language (dal.ca)](https://www.mathstat.dal.ca/~selinger/quipper/))
+[Quipper](https://www.mathstat.dal.ca/~selinger/quipper/)
 
 ## 步骤：
 
@@ -37,7 +37,8 @@
 
 * 对现有的量子编程语言的发展情况有总体认知
 * 对重点分析的语言，熟悉掌握其语法特性及功能
-* 对比有缺点，并且对量子计算编程语言未来的未来发展作出探索
+* 使用量子语言对经典量子算法实现复现
+* 对量子编程语言的发展现状和未来前景有大致了解
 
 ## 分工：
 
