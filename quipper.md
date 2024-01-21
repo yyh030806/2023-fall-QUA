@@ -149,7 +149,7 @@ gate_W_at q0 q1
 
 - `cgate_not :: Bit -> Circ Bit`: 返回输入的否定
 
-  与`cnot`/`cnot_at`不同：该操作步改变输入，而是为输出创建一个新的比特。
+  与`cnot`/`cnot_at`不同：该操作不改变输入，而是为输出创建一个新的比特。
 
 - `cgate_xor/and/or :: [Bit] -> Circ Bit`
 
@@ -277,15 +277,15 @@ gate_W_at q0 q1
 
 ## Other circuit-building functions
 
-- qinit_plusminus :: [Bool](http://hackage.haskell.org/package/base-4.12.0.0/docs/Data-Bool.html#t:Bool) -> [Circ](https://www.mathstat.dal.ca/~selinger/quipper/doc/Quipper.html#t:Circ) [Qubit](https://www.mathstat.dal.ca/~selinger/quipper/doc/Quipper.html#t:Qubit)
+- qinit_plusminus :: Bool -> Circ Qubit
 
-  生成一个新量子比特，当b=F时初始化为$|+〉$，b=T时初始化为$|-〉$
+  生成一个新量子比特，当b=False时初始化为$|+〉$，b=True时初始化为$|-〉$
 
-- qinit_of_char :: [Char](http://hackage.haskell.org/package/base-4.12.0.0/docs/Data-Char.html#t:Char) -> [Circ](https://www.mathstat.dal.ca/~selinger/quipper/doc/Quipper.html#t:Circ) [Qubit](https://www.mathstat.dal.ca/~selinger/quipper/doc/Quipper.html#t:Qubit)
+- qinit_of_char :: Char -> Circ Qubit
 
   生成新量子比特初始化为 $|0〉$、$|1〉$、$|+〉$或$|−〉$，取决于字符 *C*为“0”、“1”、“+”或“-”
 
-- qinit_of_string :: [String](http://hackage.haskell.org/package/base-4.12.0.0/docs/Data-String.html#t:String) -> [Circ](https://www.mathstat.dal.ca/~selinger/quipper/doc/Quipper.html#t:Circ) [[Qubit](https://www.mathstat.dal.ca/~selinger/quipper/doc/Quipper.html#t:Qubit)]
+- qinit_of_string :: String -> Circ Qubit
 
   生成量子比特列表，值为 $|0〉$、$|1〉$、$|+〉$、$|−〉$组成的序列，由一个字符串定义，如：`00+0+++`
 
