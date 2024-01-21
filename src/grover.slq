@@ -1,0 +1,20 @@
+// silg 实现的 Grover 算法
+function grover(n: int, oracle: (qbits) =>bool): gbits {
+    // 初始化量子位
+    var qubits: qbits[n+1] = H^n On, H 1;
+    // 迭代次数近似为 sqrt（N）
+    var iterations = floor (sqrt (pow(2, n) ));
+    // Grover 选代
+    for i in l..iterations {
+        // 应用 oracle
+        qubits = oracle (qubits) ;
+        // 平均反转
+        qubits = H°n gubits;
+        qubits[0..n-1] = X^n qubits[0..n-1];
+        qubits = (H^n * C^ (n-1) (z) ) qubits;
+        qubits[0..n-1] = X^n qubits[0..n-1];
+        qubits = H^n qubits;
+        ｝
+    // 解计算并返回结果
+    measure qubits[0..n-1];
+}
